@@ -1,0 +1,254 @@
+*,
+:before,
+:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+:root {
+    font-family: 'Tilt Neon', cursive;
+
+    --main-font-size: 2em;
+    
+    --font-color: black;
+    
+    --music-character-choice-side-site-color: #EB455F;
+    --dev-character-choice-side-site-color: #BAD7E9;
+    --footer-color-main-site: #2B3467;
+    --footer-text-color: white;
+
+}
+
+h2 {
+    font-size: var(--main-font-size);
+}
+
+li, a, h2 {
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+.letters-fly {
+    background-image: linear-gradient( salmon, rgb(19, 111, 187));
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.letters-fly img {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+#letter-w {
+    width: 8%;
+    bottom: 50%;
+    margin-right: 32%;
+    
+}
+#letter-e {
+    width: 8%;
+    bottom: 50%;
+    margin-right:15%;
+    
+}
+#letter-l {
+    width: 8%;
+    bottom: 50%;
+    margin-left: 2%;
+}
+#letter-c {
+    width: 8%;
+    bottom: 50%;
+    margin-left: 19%;
+}
+#letter-o {
+    width: 8%;
+    bottom: 50%;
+    margin-left: 36%;
+}
+#letter-m {
+    width: 8%;
+    bottom: 50%;
+    margin-left: 53%;
+}
+#second-letter-e {
+    width: 8%;
+    bottom: 50%;
+    margin-left: 70%;
+}
+
+
+.sticky-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+    height: 12vh;
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    font-size: var(--main-font-size);
+    overflow-y: hidden ;
+}
+
+.contact-nav {
+    padding-right: 2%;
+    list-style-type: none;
+}
+
+main {
+    background-color: var(--main-site-background-color);
+    height: 88vh;
+}
+
+.characters {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    padding-top: 20vh;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: black; 
+    font-size: var(--main-font-size) ;
+    opacity: 90%;
+}
+
+.container:hover {
+    cursor: pointer;
+}
+
+.text {
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.container a:hover ~ .text {
+    opacity: 1;
+}
+
+#teki-dev {
+    color:chartreuse;
+
+}
+#teki-music {
+    color: darkred;
+}
+
+footer {
+    background-color: rgb(19, 111, 187) ;
+    
+}
+
+.footer-text  {
+    display: flex;
+    justify-content: center;
+    color: black;
+    padding-bottom: 5%;
+    font-size: 3em;
+    
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2vw;
+    padding-bottom: 2.5%;
+}
+
+ .glitch {
+    font-size: var(--main-font-size);
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    right: 0;
+
+    text-shadow: 
+    0.05em 0 0 rgba(255,0,0,.75),
+    -0.025em -0.05em 0 rgba(0,255,0.75),
+    0.025em 0.05em 0 rgba(0,0,255,.75);
+    
+    animation: glitch 500ms infinite;
+} 
+
+.glitch span {
+    position: absolute;
+    top: 0;
+}
+
+.button {
+    background-color: rgb(19, 111, 187);
+    border: none;
+}
+
+.glitch span:first-child {
+    animation: glitch 650ms infinite;
+    color: red;
+    z-index: 1;
+    clip-path: polygon(0,0, 100% 0, 100% 30%, 0 30%)
+}
+.glitch span:last-child {
+    animation: glitch 375 infinite;
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: 
+    0.05em 0 0 rgba(255,0,0,.75),
+    -0.025em -0.05em 0 rgba(0,255,0.75),
+    0.05em 0.05em 0 rgba(0,0,255.75);
+    }
+    14% {
+        text-shadow: 
+    0.05em 0 0 rgba(255,0,0,.75),
+    -0.025em -0.05em 0 rgba(0,255,0.75),
+    0.05em 0.05em 0 rgba(0,0,255.75);
+    }
+    15% {
+        text-shadow: 
+    0.05em -0.025em 0 rgba(255,0,0,.75),
+    -0.025em -0.025em 0 rgba(0,255,0.75),
+    0.05em 0.05em 0 rgba(0,0,255,.75);
+    }
+    49% {
+        text-shadow: 
+    0.05em -0.025em 0 rgba(255,0,0,.75),
+    -0.025em -0.025em 0 rgba(0,255,0.75),
+    0.05em 0.05em 0 rgba(0,0,255,.75);
+    }
+    50% {
+        text-shadow: 
+    0.025em 0.05em 0 rgba(255,0,0,.75),
+    -0.025em -0.05em 0 rgba(0,255,0,0.75),
+    0.05em 0.05em 0 rgba(0,0,255,.75);
+    }
+    99% {
+        text-shadow: 
+    0.025em 0.05em 0 rgba(255,0,0,.75),
+    -0.025em -0.05em 0 rgba(0,255,0,0.75),
+    0.05em 0.05em 0 rgba(0,0,255,.75);
+    }
+    100% {
+        text-shadow: 
+    0.025em 0 0 rgba(255,0,0,.75),
+    -0.025em -0.025em 0 rgba(0,255,0.75),
+    0.025em 0.05em 0 rgba(0,0,255,.75);
+    }
+}
+
+

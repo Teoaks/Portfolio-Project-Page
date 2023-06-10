@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="teki-music-styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <title>Teki music</title>
+</head>
+<body>
+  <!--Logo and contact-->
+  <header class="nav">
+      <figure>
+          <a href="index.html"><img src="assets/MusDev-logo-new.png"></a>
+      </figure>
+      <nav class="contact-nav">
+          <ul > 
+              <li><a href="#footer">Contact</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <main class="main__content">
+    <section class="header-text" id="header-text">
+        <p class="glitch" ><span aria-hidden="true" >Teki music!</span>Teki music!<span aria-hidden="true" >Teki music!</span></p>
+    </section>
+      <div class="row">
+          <figure class="row__element">
+              <video src="assets/video-1.mp4" controls poster="assets/poster-1.jpg">
+              </video>
+          </figure>
+          <section class="row__element_about">
+              <h2>About the composer</h2>
+              <p>
+                  <strong>Henryk Wieniawski</strong> ( 10 July 1835 – 31 March 1880) was a Polish virtuoso violinist, composer and pedagogue who is regarded amongst the greatest violinists in history. His younger brother Józef Wieniawski and nephew Adam Tadeusz Wieniawski were also accomplished musicians, as was his daughter Régine, who became a naturalised British subject upon marrying into the peerage and wrote music under the name Poldowski.
+              </p>
+              <h2>About the performer</h2>
+              <p><strong>Teodor Ikanovic </strong>was born in Moscow (Russia) on June 14, 1997. in a musical family. He started learning the violin as the main instrument from the age of six in Banja Luka (Bosnia and Herzegovina) in the class of Professor Biljana Radulović. After numerous performances in Bosnia and Herzegovina and abroad, many professors invited him to continue his education in Serbia. In 2007, the whole family moved to Novi Sad, in order for Teodor Ikanović to continue his musical education at the "Isidor Bajić" Music School in the class of professor Čaba Zima. </p>
+          </section>
+      </div>
+
+      <div class="row">
+          <figure class="row__element">
+              <video  src="assets/video-2.mp4" controls poster="assets/poster-2.jpg">
+              </video>
+          </figure>
+          <section class="row__element_about">
+              <h2>About the composer</h2>
+              <p>
+                Mica Nikolic was born in Sabac, Serbia in 1958. and died in 2018. he was a Serbian composer, instrumentalist, aranger and a singer. He was one of the folk musicians who was very much respected between all genres.
+              </p>
+              <h2>About the performer - part 2</h2>
+              <p>
+                  He won several awards, the most notable of which are: 1st prize at the "Jaroslav Kocian" competition in the Czech Republic, first prize at the Republic of Serbia competitions and 2nd place at the "Andrea Postacchini" competition in Italy. He completed his basic academic studies in 2019 in Novi Sad at the Academy of Arts in the class of Professor Robert Lakatoš. In 2019, he enrolled in the Master of Academic Studies in Chengdu (China) in the class of Professor Tymur Melnyk. Due to the epidemiological situation, his studies in China are still ongoing. In 2020, he enrolled in the Master of Academic Studies at the Academy of Arts in Novi Sad in the class of Professor Robert Lakatoš, which he completed in October 2021 with a high average. He attended master classes of famous violinists, such as: Phillip Greenberg (USA), Robert Kowalski (Poland), Benjamin Ziervogel (Austria/Slovenia), Dejan Bogdanović (Serbia/Italy), Uroš Pešić (Serbia) and Robert Lakatoš (Serbia). .
+              </p>
+          </section>
+      </div>
+      <section class="section__gallery">
+          <h2>
+              Gallery
+          </h2>
+          <section class="carousel" aria-label="Gallery">
+              <ol class="carousel__viewport">
+                <li id="carousel__slide1"
+                    tabindex="0"
+                    class="carousel__slide">
+                  <div class="carousel__snapper">
+                    <a href="#carousel__slide2"
+                        class="carousel__next">Go to next slide</a>
+                  </div>
+                </li>
+                <li id="carousel__slide2"
+                    tabindex="0"
+                    class="carousel__slide">
+                  <div class="carousel__snapper"></div>
+                  <a href="#carousel__slide1"
+                      class="carousel__prev">Go to previous slide</a>
+                  <a href="#carousel__slide3"
+                      class="carousel__next">Go to next slide</a>
+                </li>
+                <li id="carousel__slide3"
+                    tabindex="0"
+                    class="carousel__slide">
+                  <div class="carousel__snapper"></div>
+                  <a href="#carousel__slide2"
+                      class="carousel__prev">Go to previous slide</a>
+                </li>
+              </ol>
+              <aside class="carousel__navigation">
+                <ol class="carousel__navigation-list">
+                  <li class="carousel__navigation-item">
+                    <a href="#carousel__slide1"
+                        class="carousel__navigation-button">Go to slide 1</a>
+                  </li>
+                  <li class="carousel__navigation-item">
+                    <a href="#carousel__slide2"
+                        class="carousel__navigation-button">Go to slide 2</a>
+                  </li>
+                  <li class="carousel__navigation-item">
+                    <a href="#carousel__slide3"
+                        class="carousel__navigation-button">Go to slide 3</a>
+                  </li>
+                </ol>
+              </aside>
+            </section>
+      
+  </main>
+
+  <footer id="footer">
+    <p class="footer-text">Let's work together!</p>
+    <section class="footer-container">
+        <button class="button"  style="font-size:24px"><a href="https://github.com/Teoaks" target="_blank">Github <i class="fa fa-github"></i></a></button>
+        <button class="button"  style="font-size:24px"><a href="https://twitter.com/IkanovicTeodor" target="_blank">Twitter <i class="fa fa-twitter"></i></a></button>
+        <button class="button"  style="font-size:24px"><a href="https://www.freecodecamp.org/fccbaf2e501-5da3-42f4-9e20-755b01e4f4f8" target="_blank">FreeCodeCamp <i class="fa fa-free-code-camp"></i></a>
+        <button class="button"  style="font-size:24px"><a href="mailto: ikanovic.teodor@gmail.com" target="_blank">Email <i class="fa fa-envelope"></i></a>
+    </section>
+</footer>
+</body>
+</html>
